@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="e-commerce website" />
+    <meta
+      name="keywords"
+      content="e-commerce,clothes,electronic gadgets,cars"
+    />
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="../static/index.js" defer></script>
+    <title>{% block title %}{% endblock title %}| BuyIt</title>
+  </head>
+
+  <body>
+
+  {% block body %}{% endblock body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a class="navbar-brand" href="/">
+        <img src="../static/images/logo1.png" alt="logo" class="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-start"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/model">MODELS</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/pricing">PRICING</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">CART</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto d-flex flex-column sidebar my-5">
+          <li class="nav-item mx-2 my-4">
+            <a class="nav-link" href="#"><i class="far fa-id-badge"></i></a>
+          </li>
+          <li class="nav-item mx-2 my-4">
+            <a class="nav-link" href="#"><i class="fas fa-clock"></i></a>
+          </li>
+          <li class="nav-item mx-2 my-4">
+            <a class="nav-link" href="#"><i class="fab fa-opencart"></i></a>
+          </li>
+          <li class="nav-item mx-2 my-4">
+            <a class="nav-link" href="#"><i class="fab fa-searchengin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="overlay">
+      <img src="../static/images/logo1.png" alt="logo" />
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+   
+    <!-- bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
